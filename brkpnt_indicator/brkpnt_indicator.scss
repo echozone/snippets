@@ -1,0 +1,40 @@
+// breakpoint indicator
+
+body {
+  background: #ff9;
+  &:after {
+    content: "< 480";
+    display: block;
+    font-size: 26px;
+    color: #a7a7a7;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+@media all and (min-width: 480px) {
+  body {
+    background: #fed;
+    &:after {
+      content: ">= 480";
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  body {
+    background: #eef;
+    &:after {
+      content: ">= 768";
+    }
+  }
+}
+
+@media all and (min-width: 960px) {
+  body {
+    background: #fe9;
+    &:after {
+      content: ">= 960";
+    }
+  }
+}
