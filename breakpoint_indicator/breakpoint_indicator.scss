@@ -1,9 +1,13 @@
 // breakpoint indicator
 
+$phone: 480px;
+$tablet: 768px;
+$desktop: 960px;
+
 body {
   background: #ff9;
   &:after {
-    content: "< 480";
+    content: "< #{$phone}";
     display: block;
     font-size: 26px;
     color: #a7a7a7;
@@ -12,29 +16,29 @@ body {
   }
 }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: $phone) {
   body {
     background: #fed;
     &:after {
-      content: ">= 480";
+      content: ">= #{$phone}";
     }
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: $tablet) {
   body {
     background: #eef;
     &:after {
-      content: ">= 768";
+      content: ">= #{$tablet}";
     }
   }
 }
 
-@media all and (min-width: 960px) {
+@media all and (min-width: $desktop) {
   body {
     background: #fe9;
     &:after {
-      content: ">= 960";
+      content: ">= #{$desktop}";
     }
   }
 }
