@@ -1,8 +1,8 @@
 // component - listing-separator
-@mixin listing-separator($border-width: 1px, $border-style: dotted, $border-color: #888, $placement: top, $spacing: 20px) {
-  border-#{$placement}: #{$border-width} #{$border-style} #{$border-color};
-  margin-#{$placement}: $spacing;
-  padding-#{$placement}: $spacing;
+@mixin listing-separator($border-width: 1px, $border-style: dotted, $border-color: #888, $spacing: 20px) {
+  border-top: #{$border-width} #{$border-style} #{$border-color};
+  margin-top: $spacing;
+  padding-top: $spacing;
 
   // clears floats
   overflow: hidden;
@@ -12,10 +12,4 @@
     margin: 0;
     padding: 0;
   }
-}
-
-h1, p {margin: 0;}
-
-section {
-  @include listing-separator;
 }
