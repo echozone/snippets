@@ -19,10 +19,10 @@
   cursor: pointer;
 }
 
-.content.show {
-  transform: translateY(0);
-}
 .content {
   transition: transform .5s;
   transform: translateY(-100%);
+}
+.content.show {
+  transform: translateY(0);
 }
