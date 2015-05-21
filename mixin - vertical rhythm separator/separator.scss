@@ -1,0 +1,8 @@
+$border: #ccc;
+
+// vertical rhythm separator border w/ margin + padding (compass)
+@mixin separator($margin-top: .5, $padding-top: .5, $color: $border) {
+  @include margin-leader($margin-top);
+  @include leading-border(1px, $padding-top);
+  border-color: $color;
+}
